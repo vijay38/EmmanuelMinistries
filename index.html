@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .externalLink {
+      color: #333;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example1.com')">External Link 1</p>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example2.com')">External Link 2</p>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example3.com')">External Link 3</p>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example4.com')">External Link 4</p>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example5.com')">External Link 5</p>
+  <p class="externalLink" onclick="openLinkInNewTab('https://example6.com')">External Link 6</p>
+
+  <script>
+    function openLinkInNewTab(link) {
+      window.open(link, '_blank');
+    }
+  </script>
+</body>
+</html>
