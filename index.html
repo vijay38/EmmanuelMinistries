@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>External Links</title>
+  <title>Emmanuel Ministries Hyderabad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,23 +14,115 @@
     }
 
     .externalLink {
-      color: #333;
-      cursor: pointer;
-      text-decoration: underline;
+      display: flex;
+      flex-direction: row;
+      gap:10px;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .youtubeLink {
+      background-color: #ff0000;
+      color: #fff;
+    }
+
+    .instagramLink {
+      background-color: #405de6;
+      color: #fff;
+    }
+
+    .whatsappLink {
+      background-color: #25d366;
+      color: #fff;
+    }
+
+    .facebookLink {
+      background-color: #1877f2;
+      color: #fff;
+    }
+
+    .externalLink:hover,
+    .externalLink:active  {
+      background-color: #333;
+      border-color: #333;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .icon {
       margin-bottom: 10px;
-      display: block;
+    }
+
+    .icon {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    p span {
+      border: 2px solid #fff;
+      border-radius: 5px;
+      padding: 8px;
+      margin: 2px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    h1{
+      font-size: 1.5em;
     }
   </style>
 </head>
 <body>
-  <p class="externalLink" onclick="openLinkInNewTab('https://youtube.com/@EmmanuelMinistriesHyderabad?si=XXFw87WR-BJMYmd1')">Emmanuel Ministries Hyderabad</p>
-  <p class="externalLink" onclick="openLinkInNewTab('https://youtube.com/@EmmanuelMinistriesOfficial?si=S5NEHfVhSNdauoTy')">Emmanuel Ministries Official</p>
-  <p class="externalLink" onclick="openLinkInNewTab('https://youtube.com/@Sis.JyothiEmmanuel?si=8YFxBD_TgG4XUVrU')">Sis B.Jyothi</p>
-  <p class="externalLink" onclick="openLinkInNewTab('https://youtube.com/@PastorGeorgeEmmanuel?si=k3y0x40QEbd4-sQ8')">Pas George</p>
-  <p class="externalLink" onclick="openLinkInNewTab('https://youtube.com/@emmanuelmelodies6429?si=a8_dx9B9KVrq0VMU')">Emmanuel Melodies</p>
-  <p class="externalLink" onclick="openLinkInNewTab('https://www.facebook.com/EmmanuelMinistriesChurch?sfnsn=wiwspwa&mibextid=RUbZ1f')">Join our Whatsapp channel</p>
+  <h1 class="header">Click Below Links to Subscribe</h1>
+  <a class="externalLink youtubeLink" href="https://youtube.com/@EmmanuelMinistriesHyderabad?si=XXFw87WR-BJMYmd1" target="_blank">
+    <i class="fa fa-youtube-play icon" style="font-size:48px;" style="font-size:48px;"></i>
+    <p> Emmanuel Ministries Hyderabad</p>
+  </a>
+  <a class="externalLink whatsappLink" href="https://whatsapp.com/channel/0029VaA4qYjBFLgZvZTub820" target="_blank">
+    <i class="fa fa-whatsapp" style="font-size:48px;color:white"></i>
+    <p>Join our Whatsapp Channel</p>
+  </a>
+  <a class="externalLink youtubeLink" href="https://youtube.com/@EmmanuelMinistriesOfficial?si=S5NEHfVhSNdauoTy" target="_blank">
+    <i class="fa fa-youtube-play icon" style="font-size:48px;" style="font-size:48px;"></i>
+    <p> Emmanuel Ministries Official</p>
+  </a>
+  <a class="externalLink facebookLink" href="https://www.facebook.com/EmmanuelMinistriesChurch?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank">
+    <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
+    <p>Follow us on Facebook</p>
+  </a>
+  <a class="externalLink youtubeLink" href="https://youtube.com/@Sis.JyothiEmmanuel?si=8YFxBD_TgG4XUVrU" target="_blank">
+    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <p>Sister Jyothi</p>
+  </a>
+  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuelministries_official?igsh=cHNoaWhqZ2tpOHkz" target="_blank">
+    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+    <p>Follow Official Instagram</p>
+  </a>
+  <a class="externalLink youtubeLink" href="https://youtube.com/@PastorGeorgeEmmanuel?si=k3y0x40QEbd4-sQ8" target="_blank">
+    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <p>Pastor George</p>
+  </a>  
+  <a class="externalLink instagramLink" href="https://www.instagram.com/emmanuel_ministries_hyderabad?igsh=ZWZ2MnluYjlmOGx4" target="_blank">
+    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+    <p>Follow us on Instagram</p>
+  </a>
+  <a class="externalLink youtubeLink" href="https://youtube.com/@emmanuelmelodies6429?si=a8_dx9B9KVrq0VMU" target="_blank">
+    <i class="fa fa-youtube-play icon" style="font-size:48px;"></i>
+    <p>Emmanuel Melodies</p>
+  </a>
+  
+  
+  
 
   <script>
+    // You can keep the JavaScript function if needed
     function openLinkInNewTab(link) {
       window.open(link, '_blank');
     }
