@@ -77,16 +77,28 @@
     h1{
       font-size: 1.2em;
       color:white;
+    }
+    .header{
       border: 2px solid #fff;
       border-radius: 5px;
       padding: 8px;
       margin: 2px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      gap:4px;
+    }
+    .custom-icon {
+      width: 48px; /* Adjust the width as needed */
+      height: 48px; /* Adjust the height as needed */
     }
   </style>
 </head>
 <body>
-  <h1 class="header">Click Below Links to Subscribe</h1>
+  <div class="header">
+  <img src="Logo.png" alt="Custom Icon" class="custom-icon">
+  <h1 >Click Below Links to Subscribe</h1>
+  </div>
   <a class="externalLink youtubeLink" href="https://youtube.com/@EmmanuelMinistriesHyderabad?si=XXFw87WR-BJMYmd1" target="_blank">
     <i class="fa fa-youtube-play icon" style="font-size:48px;" style="font-size:48px;"></i>
     <p> Emmanuel Ministries Hyderabad</p>
